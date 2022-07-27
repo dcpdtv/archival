@@ -63,7 +63,8 @@ components:
           type: string
           example: 7
         size:
-          type: string
+          type: integer
+          format: int32
           example: 1084
         digest:
           type: string
@@ -124,3 +125,7 @@ components:
         - broadband_status
         - broadband_consent
       type: object
+servers:
+  # Added by API Auto Mocking Plugin
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/PRIYANKABALAG/archivalapi/1.0.0
