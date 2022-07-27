@@ -125,7 +125,3 @@ components:
         - broadband_status
         - broadband_consent
       type: object
-servers:
-  # Added by API Auto Mocking Plugin
-  - description: SwaggerHub API Auto Mocking
-    url: https://virtserver.swaggerhub.com/PRIYANKABALAG/archivalapi/1.0.0
