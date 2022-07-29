@@ -4,14 +4,14 @@ info:
   version: "1.0.0"
   title: BEST Digital
 paths:
-  /archivalupload:
+  /api/v1/upload:
    post:
       security: 
         - basicAuth: []
       operationId: addtoarchive
       responses:
         '200':
-          description: 'Posted successfully'
+          description: 'Uploaded successfully'
         '500':
           description: 'Processing Failed'
         '401':
