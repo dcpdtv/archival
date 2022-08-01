@@ -57,22 +57,28 @@ components:
         content_type:
           type: string
           example: pdf
+          description: Content type of the file to upload. All file types are supported(ex: pdf,txt etc)
         doc_type:
           type: string
           example: GEM broadband consent
+          description: Document refers to the type of the document which is uploaded in the source systems
         retention:
           type: string
           example: 7
+          description: Number of years to archive the uploaded file and metadata (ex:1 ,7)
         size:
           type: integer
           format: int32
           example: 1084
+          description: Size of the file to be uploaded in bytes
         digest:
           type: string
           example: "0b91043ee484abd83c3e4b08d6034d71b937026379f0f59bda6e625e6e214789"
+          description: Hash value of digest type specified for the file. The digest make sures that data is encrypted in a secure way
         digest_type:
           type: string
           example: "SHA256"
+          description: We support SHA256 digest type for now
         search:
           $ref: '#/components/schemas/SearchItems'
       required:
@@ -90,32 +96,41 @@ components:
           type: integer
           format: int32
           example: 1277767
+          description: Account number
         biller:
           type: string
           example: "STMS"
+          description: Biller name
         order_id:
           type: integer
           format: int32
           example: 1005678
+          description: Order id
         consent_datetime:
           type: string
           format: date-time
           example: '2016-08-29T09:12:33.001Z'
+          description: The datetime captured while consent
         agent_id:
           type: string
           example: "1200238"
+          description: Agent id
         agent_type:
           type: string
           example: "call center"
+          description: Agent type
         source_system:
           type: string
           example: "DTV-OMS"
+          description: Name of the source system
         broadband_status:
           type: string
           example: "system shows connected"
+          description: Broadband status
         broadband_consent:
           type: string
           example: "broadband requirement explained"
+          description: Broadband consent
       required:
         - biller
         - order_id
