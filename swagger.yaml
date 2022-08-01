@@ -53,6 +53,7 @@ components:
         source:
           type: string
           example: DTV-OMS
+          description: Name of the source system
         content_type:
           type: string
           example: pdf
