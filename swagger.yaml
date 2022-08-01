@@ -57,7 +57,7 @@ components:
         content_type:
           type: string
           example: pdf
-          description: Content type of the file to upload. All file types are supported(ex: pdf,txt etc)
+          description: Content type of the file to upload All file types are supported
         doc_type:
           type: string
           example: GEM broadband consent
@@ -65,7 +65,7 @@ components:
         retention:
           type: string
           example: 7
-          description: Number of years to archive the uploaded file and metadata (ex:1 ,7)
+          description: Number of years to archive the uploaded file and metadata 
         size:
           type: integer
           format: int32
