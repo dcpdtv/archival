@@ -64,8 +64,8 @@ components:
           description: Document refers to the type of the document which is uploaded in the source systems
         retention:
           type: string
-          example: 7
-          description: Number of years to archive the uploaded file and metadata 
+          example: yearretention
+          description: retention policy (TBD) 
         size:
           type: integer
           format: int32
