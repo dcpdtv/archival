@@ -80,7 +80,8 @@ components:
           example: "SHA256"
           description: We support SHA256 digest type for now
         search:
-          $ref: '#/components/schemas/SearchItems'
+          type: object
+          additionalProperties: true
       required:
         - source
         - content_type
@@ -90,54 +91,3 @@ components:
         - digest
         - digest_type
         - search
-    SearchItems:
-      properties:
-        acc_num:
-          type: integer
-          format: int32
-          example: 1277767
-          description: Account number
-        biller:
-          type: string
-          example: "STMS"
-          description: Biller name
-        order_id:
-          type: integer
-          format: int32
-          example: 1005678
-          description: Order id
-        consent_datetime:
-          type: string
-          format: date-time
-          example: '2016-08-29T09:12:33.001Z'
-          description: The datetime captured while consent
-        agent_id:
-          type: string
-          example: "1200238"
-          description: Agent id
-        agent_type:
-          type: string
-          example: "call center"
-          description: Agent type
-        source_system:
-          type: string
-          example: "DTV-OMS"
-          description: Name of the source system
-        broadband_status:
-          type: string
-          example: "system shows connected"
-          description: Broadband status
-        broadband_consent:
-          type: string
-          example: "broadband requirement explained"
-          description: Broadband consent
-      required:
-        - biller
-        - order_id
-        - consent_datetime
-        - agent_id
-        - agent_type
-        - source_system
-        - broadband_status
-        - broadband_consent
-      type: object
