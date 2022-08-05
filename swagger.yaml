@@ -82,6 +82,7 @@ components:
         search:
           type: object
           additionalProperties: true
+          description: Search fields to input as part of API onboarding
       required:
         - source
         - content_type
