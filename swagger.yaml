@@ -82,7 +82,7 @@ components:
         search:
           type: object
           additionalProperties: true
-          description: Search fields to input as part of API onboarding
+          description: Search fields as defined during app onboarding to Enterprise Archival
       required:
         - source
         - content_type
